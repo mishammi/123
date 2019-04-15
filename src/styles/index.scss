@@ -285,6 +285,7 @@ color: #0d3351;
   width: 48%;
  // height: 628px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .card_img{
@@ -353,7 +354,7 @@ color: #0d3351;
   margin-bottom: 10px;
 }
 
-.card_mini{
+.card_mini{cursor: pointer;
   margin-top: 20px;
   margin-right: 1%;
   display:inline-block;

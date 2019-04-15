@@ -1,0 +1,14 @@
+// Container widths
+
+.container {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
+.container-fluid {
+  @include make-container();
+}

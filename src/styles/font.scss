@@ -1,1 +1,6 @@
-//@include font-face(Circe, '../fonts/Circe/Circe-Bold', 600, normal, woff2 woff);
+//@include font-face(RobotoSlab, '../fonts/roboto/robotoslabregular', 600, normal,woff);
+
+//@include font-face(Raleway, '../fonts/raleway/ralewayregular', 600, normal,woff);
+
+@include font-face(RobotoSlab, '../fonts/robotoslabregular', 600, normal,ttf);
+@include font-face(Raleway, '../fonts/ralewayregular', 600, normal,ttf);

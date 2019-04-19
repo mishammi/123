@@ -100,19 +100,22 @@
   }
 }
 
+
 @mixin mq-mob() {
-  @media screen and (max-width: 639px) {
+  @media screen and (max-width: 640px) {
     @content;
   }
 }
+
+@mixin mq-tub() {
+  @media screen and (min-width: 641px) and (max-width: 1299px) {
+    @content;
+  }
+}
+
 @mixin mq-desktop() {
   @media screen and (min-width: 1300px) {
     @content;
   }
 }
 
-@mixin mq-tub() {
-  @media screen and (min-width: 640px) {
-    @content;
-  }
-}

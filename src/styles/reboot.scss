@@ -135,8 +135,10 @@ address {
 ol,
 ul,
 dl {
-  margin-top: 0;
+  padding: 0px;
+ // margin-top: 0;
   margin-bottom: 1rem;
+  list-style-type: none;
 }
 
 ol ol,

@@ -53,11 +53,12 @@ $link-hover-decoration:     underline !default;
 //
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
-
+/*
 $grid-breakpoints: (
         xs: 0,
         sm: 768px,
         md: 1299px
+        lg: 1024px
 ) !default;
 
 //@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -69,11 +70,26 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-        xs: 15px,
+        //xs: 15px,
         sm: 720px,
         md: 1140px
 ) !default;
+*/
 
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+ // lg: 992px,
+  xl: 1300px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+ // lg: 940px,
+  xl: 1140px
+);
 //@include _assert-ascending($container-max-widths, "$container-max-widths");
 
 // Fonts

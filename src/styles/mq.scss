@@ -1,4 +1,25 @@
 @include mq-desktop(){
+a svg:hover #vkontakte,
+a svg:hover #odnokl,
+a svg:hover #youtube, 
+a svg:hover #instagram  { 
+    fill: #111;
+  }
+
+  a svg #vkontakte,
+  a svg #odnokl,
+  a svg #youtube, 
+  a svg #instagram  { 
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}  
+
+strong{
+  font-family: RobotoSlab;
+}
+
 .menu_hr{
   margin: 25px 0px 0px 0px;
   width: 22px;
@@ -25,6 +46,44 @@ background-color: #0d3351;
 li { font-family: Raleway;
 
 }
+
+.block_by{
+  border-width: 80px 44px 25px;
+  border-style: solid;
+  border-color: #33c7fd #33c7fd transparent;
+  margin-top: -7px;
+  margin-left: 420px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block_by_ak{
+  border-width: 80px 44px 25px;
+  border-style: solid;
+  border-color: #f20542 #f20542 transparent;
+  margin-top: -7px;
+  margin-left: 420px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_by{
+  margin-top: -40px;
+  position	: absolute;
+  width: 65px;
+  height: 32px;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #ffffff;
+}
+
 
 .button_menu{
 cursor: pointer;
@@ -160,24 +219,28 @@ background-color: #ffffff;
 }
 
 .vk_b {clip-path: circle(50% at center center);
+//margin-left: 10px;
 width: 30px;
 height: 30px;
 background-color: #0d3351;
 }
 
 .yt_b {clip-path: circle(50% at center center);
+  margin-left: 10px;
 width: 30px;
 height: 30px;
 background-color: #0d3351;
 }
 
 .ok_b {clip-path: circle(50% at center center);
+  margin-left: 10px;
 width: 30px;
 height: 30px;
 background-color: #0d3351;
 }
 
 .insta_b {clip-path: circle(50% at center center);
+  margin-left: 10px;
 width: 30px;
 height: 30px;
 background-color: #0d3351;
@@ -201,8 +264,8 @@ object-fit: contain;
 }
 
 .yt {
-margin-left: 6px;
-margin-top: 5px;
+margin-left: 8px;
+margin-top: 6px;
 width: 14px;
 height: 18px;
 object-fit: contain;
@@ -210,8 +273,8 @@ object-fit: contain;
 }
 
 .insta {
-margin-left: 6px;
-margin-top: 5px;
+margin-left: 8px;
+margin-top: 7px;
 width: 14px;
 height: 14px;
 object-fit: contain;
@@ -220,8 +283,6 @@ object-fit: contain;
 
 .footer_top{
 height: 130px;
-//  margin-right:10%;
-//  margin-left:10%;
 display: flex;
 flex-direction: row;
 justify-content: Space-between;
@@ -232,7 +293,7 @@ align-items:center;
 cursor: pointer;
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 }
 
@@ -282,13 +343,14 @@ letter-spacing: 0.7px;
 }
 
 .footer_block2{
+  display: flex;
 flex-direction:column;
 justify-content:center;
 
 }
 
 .text_cv{
-text-align: center;
+text-align: left;
 }
 
 //------------------------------------------------------------------------------------------
@@ -368,6 +430,23 @@ text-align: left;
 margin-bottom: 10px;
 }
 
+.text_money_old{
+  margin-left:30px;
+  text-decoration: line-through;
+  opacity: 0.55;
+  font-family: RobotoSlab;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: rgba(13, 51, 81, 0.55);
+}
+
+.text_money_div{
+  align-items:center;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .card_mini{cursor: pointer;
 margin-top: 20px;
 margin-right: 1%;
@@ -382,6 +461,18 @@ width: 100%;
 //height: 437px;
 object-fit: contain;
 }
+
+}
+
+.footer_left{
+  width: 40%;
+  justify-content: space-between;
+    display: flex;
+}
+.footer_right{
+  width: 60%;
+  justify-content: flex-end;
+    display: flex;
 
 }
 //-----------------------------------------------------------------------------------------------
@@ -643,7 +734,7 @@ justify-content:center;
 }
 
 .text_cv{
-text-align: center;
+text-align: left;
 }
 
 //------------------------------------------------------------------------------------------
